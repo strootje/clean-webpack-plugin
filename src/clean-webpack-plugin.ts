@@ -241,6 +241,9 @@ class CleanWebpackPlugin {
         const assets =
             stats.toJson({
                 assets: true,
+                cachedAssets: true,
+                relatedAssets: true,
+                all: false,
             }).assets || [];
 
         const relatedAssets = assets
